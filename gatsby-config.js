@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter Test",
+    title: "Gatsby Contentful Starter Test Site",
     description: "Official Contentful Gatsby Starter",
   },
   plugins: [
