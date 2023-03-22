@@ -20,5 +20,31 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+    {
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        enableListener: true,
+        preconnect: ["https://use.typekit.net"],
+        web: [
+          {
+            name: ["minerva-modern","dolly-new","dolly-small-caps-new"],
+            file: "https://use.typekit.net/qjo2kys.css",
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        enableListener: true,
+        preconnect: ["https://fonts.gstatic.com"],
+        web: [
+          {
+            name: ["Poppins"],
+            file: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap",
+          },
+        ],
+      },
+    },
   ],
 };

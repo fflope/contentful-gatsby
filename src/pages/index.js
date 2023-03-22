@@ -11,6 +11,7 @@ class RootIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
     const [author] = get(this, 'props.data.allContentfulPerson.nodes')
+    const [herocustom] = get(this, 'props.data.allContentfulHeroCustom.nodes')
 
     return (
       <Layout location={this.props.location}>
@@ -20,9 +21,11 @@ class RootIndex extends React.Component {
           content={author.shortBio}
         />
         <HeroCustom
-          image={author.heroImage.gatsbyImage}
-          title={author.name}
-          content={author.shortBio}
+          image={herocustom.image.gatsbyImage}
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+          buttonlabel={herocustom.buttonLabel}
+          buttonlink={herocustom.buttonLink}
         />
         <ArticlePreview posts={posts} />
       </Layout>
@@ -63,6 +66,19 @@ export const pageQuery = graphql`
         }
         title
         heroImage: image {
+          gatsbyImage(layout: CONSTRAINED, placeholder: BLURRED, width: 1180)
+        }
+      }
+    }
+    allContentfulHeroCustom(
+      filter: { contentful_id: { eq: "58Rf9XKgbSu2HHGKPyyXpk" } }
+    ) {
+      nodes {
+        heading
+        subHeading
+        buttonLink
+        buttonLabel
+        image: image {
           gatsbyImage(layout: CONSTRAINED, placeholder: BLURRED, width: 1180)
         }
       }
