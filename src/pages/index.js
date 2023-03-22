@@ -5,6 +5,7 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import HeroCustom from '../components/hero-custom'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,6 +15,11 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Hero
+          image={author.heroImage.gatsbyImage}
+          title={author.name}
+          content={author.shortBio}
+        />
+        <HeroCustom
           image={author.heroImage.gatsbyImage}
           title={author.name}
           content={author.shortBio}
@@ -48,7 +54,7 @@ export const pageQuery = graphql`
       }
     }
     allContentfulPerson(
-      filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
+      filter: { contentful_id: { eq: "5BZbnBKV77Aj3wrC78OzGg" } }
     ) {
       nodes {
         name
