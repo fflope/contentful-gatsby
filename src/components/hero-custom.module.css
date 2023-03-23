@@ -1,10 +1,25 @@
 .container {
-  display: flex;
+  display: block;
   justify-content: space-between;
   max-width: var(--size-max-width);
   align-items: center;
   margin: 0 auto;
   padding: var(--space-2xl) var(--size-gutter);
+  
+}
+
+.outerContainer {
+  position: relative;
+  background: url(https://images.ctfassets.net/cdypw9nxi8dj/50cWH3Pk42Lp6K4GnLHKe/94e432d36f35029608fc328476ac4ba0/bwb-home-banner.jpg);
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  z-index: 10;
 }
 
 .hero {
@@ -31,14 +46,16 @@
   font-style: normal;
   font-size: var(--text-2xl);
   line-height: var(--default);
+  color: #fff;
 }
 
 .heroCustomMinervaBold {
   font-family: "minerva-modern", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
-  font-size: var(--text-3xl);
+  font-size: var(--text-6xl);
   line-height: var(--default);
+  color: #fff;
 }
 
 .heroCustomDolly {
@@ -57,6 +74,12 @@
   height: 61.8vh;
   max-height: 560px;
   width: 100%;
+}
+
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .details {
@@ -80,6 +103,23 @@
   font-size: var(--text-lead);
   font-weight: var(--semibold);
   margin: 0;
+}
+
+.btnPrimary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-xl);
+  line-height: var(--default);
+  color: #fff;
+  background: #c27c5a;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.btnPrimary:hover {
+  background: #423f40;
+  color: #fff !important;
 }
 
 @media (min-width: 480px) {
