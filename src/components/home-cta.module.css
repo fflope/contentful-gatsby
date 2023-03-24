@@ -1,0 +1,163 @@
+.container {
+  display: block;
+  justify-content: space-between;
+  max-width: var(--size-max-width);
+  align-items: center;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--size-gutter);
+  
+}
+
+.homeCTAHeading {
+  font-family: "minerva-modern", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: var(--default);
+  color: #3c3c3c;
+  text-align: center;  
+  margin-bottom: 0 !important;
+}
+
+.homeCTAText {
+  font-family: "minerva-modern", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-2xl);
+  line-height: var(--default);
+  color: #3c3c3c;
+  text-align: center;
+}
+
+.homeCTABoxesRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: var(--space-3xl);
+  margin-top: 40px;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 300;
+  
+}
+
+.homeCTABoxes {
+  background: #423f40;
+  color: #fff;
+}
+
+.InnerText {
+  font-size: 18px;
+}
+
+.homeCTABoxesInner {
+  padding: 20px;
+}
+
+.InnerHeading {
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  color: #f2e9dc;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.homeCTABoxes a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  background: #c27c5a;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.IconText {
+  font-size: 16px;
+  color: #f2e9dc;
+}
+
+.image {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  height: 61.8vh;
+  max-height: 560px;
+  width: 100%;
+}
+
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.details {
+  background: var(--background);
+  left: 0;
+  max-width: 40rem;
+  width: 85%;
+  padding: var(--space-2xl) var(--size-gutter) 0;
+  position: absolute;
+}
+
+.title {
+  letter-spacing: -0.012em;
+  font-size: var(--text-title);
+  font-weight: var(--extrabold);
+  line-height: var(--solid);
+  margin: 0 0 var(--space-xl);
+}
+
+.content {
+  font-size: var(--text-lead);
+  font-weight: var(--semibold);
+  margin: 0;
+}
+
+.btnPrimary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-xl);
+  line-height: var(--default);
+  color: #fff;
+  background: #c27c5a;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.btnPrimary:hover {
+  background: #423f40;
+  color: #fff !important;
+}
+
+@media (min-width: 480px) {
+  .details {
+    padding-top: var(--space-3xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: var(--size-gutter);
+  }
+
+  .details {
+    max-width: 44rem;
+    padding: var(--space-3xl) var(--size-gutter) 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image {
+    margin-left: auto;
+    width: 85%;
+  }
+
+  .details {
+    left: var(--size-gutter);
+    padding: var(--space-3xl) var(--size-gutter) 0 0;
+  }
+}
