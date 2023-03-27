@@ -7,6 +7,14 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import HeroCustom from '../components/hero-custom'
 import HomeCta from '../components/home-cta'
+import HowWeCanHelp from '../components/how-we-can-help'
+import WhyChoose from '../components/why-choose'
+import AllThingsWeCanHelp from '../components/all-things-we-can-help'
+import HomeOurTeam from '../components/home-our-team'
+import HomeChooseYourLocation from '../components/home-choose-your-location'
+import HomeFamilyLawResources from '../components/home-family-law-resources'
+import HomeTestimonialsSlider from '../components/home-testimonials-slider'
+
 
 class RootIndex extends React.Component {
   render() {
@@ -26,7 +34,35 @@ class RootIndex extends React.Component {
           title={herocustom.heading}
           content={herocustom.subHeading}
         />
+        <HowWeCanHelp
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
+        <WhyChoose
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
+        <AllThingsWeCanHelp
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
+        <HomeOurTeam
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
+        <HomeChooseYourLocation
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
+        <HomeFamilyLawResources
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
         <ArticlePreview posts={posts} />
+        <HomeTestimonialsSlider
+          title={herocustom.heading}
+          content={herocustom.subHeading}
+        />
       </Layout>
     )
   }

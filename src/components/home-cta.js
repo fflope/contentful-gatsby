@@ -1,6 +1,4 @@
 import React from 'react'
-
-import Container from '../components/container'
 import * as styles from './home-cta.module.css'
 import { StaticImage } from "gatsby-plugin-image"
 

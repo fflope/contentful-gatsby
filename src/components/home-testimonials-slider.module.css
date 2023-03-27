@@ -1,3 +1,11 @@
+.outerContainer {
+  background: #8e8765;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+  margin-top: 40px;
+}
+
 .container {
   display: block;
   justify-content: space-between;
@@ -7,7 +15,7 @@
   padding: var(--space-2xl) var(--size-gutter);
 }
 
-.homeCTAHeading {
+.heading {
   font-family: "minerva-modern", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -18,37 +26,55 @@
   margin-bottom: 0 !important;
 }
 
-.homeCTAText {
+.locationSubHeading {
+  font-family: "minerva-modern", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  line-height: var(--default);
+  color: #3c3c3c;
+  text-align: left;  
+  margin-bottom: 0 !important;
+}
+
+.testimonialsText {
   font-family: "dolly-new", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--text-2xl);
   line-height: var(--default);
-  color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonialsNameText {
+  margin-top: 40px;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-1xl);
+  line-height: var(--default);
+  color: #fff;
   text-align: center;
 }
 
 .homeCTABoxesRow {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: var(--space-3xl);
+  grid-template-columns: repeat(auto-fit, minmax(151px, 7fr));
+  grid-gap: var(--space-xl);
   margin-top: 40px;
   font-family: "dolly-new", sans-serif;
   font-weight: 300;
-  margin-bottom: 40px;
+  color: #3c3c3c;
 }
 
 .homeCTABoxes {
-  background: #423f40;
-  color: #fff;
+  color: #3c3c3c;
+  display: block;
 }
 
 .InnerText {
   font-size: 18px;
-}
-
-.homeCTABoxesInner {
-  padding: 20px;
 }
 
 .InnerHeading {
@@ -71,19 +97,45 @@
 
 }
 
-.IconImage {
-  width: 100px;
-  margin-right: 10px;
-}
-
 .IconText {
-  font-size: 16px;
-  color: #f2e9dc;
+  font-family: "dolly-new", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3c3c3c;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px;
 }
 
 .IconTextContainer {
-  display: flex;
+  display: block;
   min-height: 65px; 
+}
+
+.buttonContainer {
+  text-align: left;
+}
+
+.btnPrimary {
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-xl);
+  line-height: var(--default);
+  color: #fff;
+  background: #c27c5a;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.btnPrimary:hover {
+  background: #423f40;
+  color: #fff !important;
+}
+
+.IconImage {
+  text-align: center;
 }
 
 .image {

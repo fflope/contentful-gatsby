@@ -2,15 +2,20 @@ import React from 'react'
 
 import Container from './container'
 import * as styles from './footer.module.css'
+import ContactForm from './contact-form'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => (
-  <Container as="footer">
-    <div className={styles.container}>
-      Built with <a href="https://contentful.com/">Contentful</a> and{' '}
-      <a href="https://gatsbyjs.com">Gatsby</a> &middot;{' '}
-      <a href="https://github.com/contentful/starter-gatsby-blog">Source</a>
+    <div className={styles.footerOuterContainer}>
+      <div className={styles.container}>
+        <div className={styles.footerHeadingContainer}>
+          <div className={styles.footerHeading}>We can help you get through this!</div>
+        </div>
+        <div className={styles.footerFormContainer}>
+          <StaticImage src="../images/footer-contact-form-placeholder.jpg" alt="Footer Contact Form Placeholder" />
+        </div>
+      </div> 
     </div>
-  </Container>
 )
 
 export default Footer

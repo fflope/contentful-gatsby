@@ -1,3 +1,8 @@
+.outerContainer {
+  background: #f2e8dc;
+  padding-bottom: 40px;
+}
+
 .container {
   display: block;
   justify-content: space-between;
@@ -7,7 +12,7 @@
   padding: var(--space-2xl) var(--size-gutter);
 }
 
-.homeCTAHeading {
+.heading {
   font-family: "minerva-modern", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -18,7 +23,7 @@
   margin-bottom: 0 !important;
 }
 
-.homeCTAText {
+.text {
   font-family: "dolly-new", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -30,25 +35,21 @@
 
 .homeCTABoxesRow {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: var(--space-3xl);
+  grid-template-columns: repeat(auto-fit, minmax(151px, 7fr));
+  grid-gap: var(--space-xl);
   margin-top: 40px;
   font-family: "dolly-new", sans-serif;
   font-weight: 300;
-  margin-bottom: 40px;
+  
 }
 
 .homeCTABoxes {
-  background: #423f40;
-  color: #fff;
+  color: #3c3c3c;
+  display: block;
 }
 
 .InnerText {
   font-size: 18px;
-}
-
-.homeCTABoxesInner {
-  padding: 20px;
 }
 
 .InnerHeading {
@@ -71,19 +72,41 @@
 
 }
 
-.IconImage {
-  width: 100px;
-  margin-right: 10px;
-}
-
 .IconText {
-  font-size: 16px;
-  color: #f2e9dc;
+  font-family: "dolly-new", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3c3c3c;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px;
 }
 
 .IconTextContainer {
-  display: flex;
+  display: block;
   min-height: 65px; 
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.btnPrimary {
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-xl);
+  line-height: var(--default);
+  color: #fff;
+  background: #c27c5a;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.btnPrimary:hover {
+  background: #423f40;
+  color: #fff !important;
 }
 
 .image {
